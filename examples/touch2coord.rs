@@ -1,4 +1,4 @@
-use kobo::{display::sizing::KOBO_AURA_SCREEN_SIZE_PX, input::touch::TouchEventListener};
+use kobo::{display::sizing::KOBO_H20_SCREEN_SIZE_PX, input::touch::TouchEventListener};
 
 fn main() {
     // Open a touch event listener
@@ -8,7 +8,7 @@ fn main() {
     // Read and dump events
     println!("Reading events");
     loop {
-        let touch = listener.next_touch(KOBO_AURA_SCREEN_SIZE_PX, None);
+        let touch = listener.next_touch(KOBO_H20_SCREEN_SIZE_PX, None);
         println!("{:?}", touch);
     }
 }
